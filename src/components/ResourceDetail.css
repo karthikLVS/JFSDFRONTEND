@@ -1,0 +1,321 @@
+/* Global Styles */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;  /* Black background for the body */
+  color: #fff; /* Text color adjusted for contrast on dark background */
+  line-height: 1.6;
+}
+
+/* Resource Detail Container */
+.resource-detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #1c1c1c; /* Dark grey background for content */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow for better contrast */
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Resource Title */
+.resource-title {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Cover Image */
+.detail-cover {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styles */
+p {
+  font-size: 18px;
+  color: #ddd; /* Lighter color for text */
+  margin: 10px 0;
+}
+
+strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.action-buttons button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.read-button {
+  background-color:  #342a2a80;
+  color: #fff;
+}
+
+.read-button:hover,
+.read-button:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+.buy-button {
+  background-color:  #342a2a80;
+  color: #fff;
+}
+
+.buy-button:hover,
+.buy-button:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+.borrow-button {
+  background-color:  #342a2a80;
+  color: #fff;
+}
+
+.borrow-button:hover,
+.borrow-button:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+.return-button {
+  background-color:  #342a2a80;
+  color: #fff;
+}
+
+.return-button:hover,
+.return-button:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with slight transparency */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.pdf-frame {
+  width: 80%;
+  height: 80%;
+  border: none;
+  border-radius: 8px;
+}
+
+.close-pdf-button {
+  background-color: #ff4444;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.close-pdf-button:hover {
+  background-color: #cc0000;
+}
+
+/* General Layout Improvements */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.resource-card {
+  background-color: #2d2d2d; /* Dark background for cards */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.resource-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.resource-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.resource-card h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.resource-card p {
+  color: #bbb;
+  font-size: 16px;
+}
+
+.module-card {
+  background-color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.module-card:hover {
+  transform: translateY(-10px);
+  background-color: #444;
+}
+
+.module-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.module-icon {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.gif-hover {
+  max-width: 100px;
+  margin-top: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #222;
+  padding-top: 20px;
+  color: #fff;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-title {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.menu-item {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #007bff;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.logout-button {
+  background-color: #ff4444;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
+
+/* Main content */
+.home-container {
+  padding: 20px;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}

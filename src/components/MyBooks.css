@@ -1,0 +1,59 @@
+/* MyBooks.css */
+
+.my-books-container {
+    padding: 20px;
+  }
+  
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-card {
+    background-color: #181313;
+    border: 1px solid #69065a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-cover {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .book-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .book-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .book-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .book-card button:hover {
+    background-color: #0056b3;
+  }
+
+
+  

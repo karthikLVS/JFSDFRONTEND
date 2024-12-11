@@ -1,0 +1,183 @@
+.form-container {
+    width: 90%; /* Set a responsive width */
+    max-width: 600px;
+    max-height: 80vh; /* Limits height to make sure it fits most screens */
+    background: linear-gradient(#1e1e1e, #1e1e1e) padding-box,
+                linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 10px 15px; /* Reduced padding for a more compact look */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 0 auto; /* Center alignment */
+    overflow-y: scroll; /* Enables scrolling */
+    scrollbar-width: none; /* Firefox */
+}
+
+.form-container::-webkit-scrollbar {
+    width: 0; /* WebKit-based browsers */
+}
+
+.form-container h2 {
+    color: #e81cff;
+    text-align: center;
+    font-size: 20px; /* Slightly smaller font for compact look */
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced gap between form fields */
+}
+
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Compact spacing */
+}
+
+.form-container .form-group label {
+    color: #a0a0a0;
+    font-weight: 600;
+    font-size: 11px; /* Slightly smaller font for labels */
+}
+
+.form-container .form-group input,
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 5px 8px; /* Reduced padding for minimized height */
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    background-color: #2a2a2a;
+    border: 1px solid #414141;
+    transition: border-color 0.3s;
+}
+
+.form-container .form-group textarea {
+    resize: none;
+    min-height: 40px; /* Reduced min-height for a more compact layout */
+}
+
+.form-container .form-group input::placeholder,
+.form-container .form-group textarea::placeholder {
+    color: #717171;
+    opacity: 0.7;
+}
+
+.form-container .form-group input:focus,
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    background: #3a3a3a;
+    border: 1px solid #555555;
+    padding: 8px 12px; /* Slightly reduced padding for button */
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-container .form-submit-btn:hover {
+    background-color: #e81cff;
+    color: #1e1e1e;
+}
+
+.message {
+    color: #40c9ff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px; /* Reduced margin for more compact spacing */
+}
+
+.select {
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    transition: 300ms;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .selected {
+    background-color: #2a2f3b;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 100000;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .arrow {
+    height: 10px;
+    transform: rotate(-90deg);
+    width: 25px;
+    fill: white;
+    transition: 300ms;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2a2f3b;
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    transition: 300ms;
+  }
+  
+  .select:hover > .options {
+    opacity: 1;
+    top: 0;
+  }
+  
+  .select:hover > .selected .arrow {
+    transform: rotate(0deg);
+  }
+  
+  .option {
+    border-radius: 5px;
+    padding: 5px;
+    transition: 300ms;
+    background-color: #2a2f3b;
+    width: 200px;
+    font-size: 15px;
+  }
+  
+  .option:hover {
+    background-color: #323741;
+  }
+  
+  .options input[type="radio"] {
+    display: none;
+  }
+  
+  .options label {
+    display: inline-block;
+  }
+  
+  .options label::before {
+    content: attr(data-txt);
+  }
+  
+  .options input[type="radio"]:checked + label {
+    display: none;
+  }
+  

@@ -1,0 +1,211 @@
+/* Reset and global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #0c0808;
+  color: #333;
+}
+
+/* Home container */
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Menu toggle button */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 1500px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 100;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 260px;
+  background-color: #0c0808;
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+/* Sidebar title */
+.sidebar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+/* Sidebar menu items */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #b2bec3;
+  font-size: 1.1rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #9f1db9;
+  color: #ffffff;
+}
+
+.menu-icon {
+  margin-right: 0.5rem;
+}
+
+/* Content wrapper */
+.content-wrapper {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #0c0808;
+  transition: margin-left 0.3s;
+}
+
+.shifted-content {
+  margin-left: 260px;
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Modules grid styling */
+.modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Module card styling */
+.module-card {
+  background-color: #121516;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  color: #2d3436;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Background for each module card */
+.module-background {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+}
+
+.module-icon {
+  font-size: 2.5rem;
+  color: #e1d4d2; /* Icon color */
+}
+
+.module-text {
+  color: #e047ff; /* Text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hover effect on module */
+.module-card:hover .module-background {
+  background-color: #555;
+}
+
+/* GIF styling */
+.gif-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 300%;
+  max-height: 300%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Make GIF visible when hovering */
+.module-card:hover .gif-hover {
+  opacity: 1;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+.resource-card {
+  border: 1px solid #4b073b;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+.resource-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.resource-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
+

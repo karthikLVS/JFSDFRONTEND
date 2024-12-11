@@ -1,0 +1,89 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #08080e;
+    margin: 0;
+    padding: 0;
+}
+
+/* Read Book Page */
+.read-book-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.read-book-page h2 {
+    text-align: center;
+    color: #e81cff;
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 2px solid #e81cff;
+    padding-bottom: 10px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+}
+
+.read-book-page .book-cover {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.read-book-page .book-cover:hover {
+    transform: scale(1.05);
+}
+
+.read-book-page p {
+    color: #b3b3b3;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.read-book-page p:hover {
+    color: #ffffff;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button-group button {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-group button:hover {
+    background-color: #e81cff;
+    color: #1e1e1e;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

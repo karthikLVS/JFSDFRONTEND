@@ -1,0 +1,74 @@
+.feedback-container {
+    max-width: 600px;
+    margin: 40px auto; /* Add margin-top to move the form downwards */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.feedback-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feedback-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.feedback-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-container button:hover {
+    background-color: #45a049;
+}
+
+.feedback-container p {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}
+
+.feedback-options {
+    margin-top: 10px;
+}
+
+.feedback-options label {
+    font-size: 14px;
+    color: #555;
+}
+
+.feedback-message {
+    margin-top: 15px;
+    font-size: 16px;
+    color: green; /* or red for errors */
+}
+
+.feedback-options {
+    display: flex; /* Ensures the checkbox and text appear side by side */
+    align-items: center; /* Vertically aligns the checkbox and text */
+}
+
+.feedback-options label {
+    display: flex; /* Keeps the label contents inline */
+    align-items: center; /* Aligns checkbox and text within the label */
+    gap: 8px; /* Adds space between the checkbox and text */
+    margin: 0; /* Ensures no unwanted margin */
+}
+
+.feedback-options input[type="checkbox"] {
+    margin: 0; /* Removes any extra default margin */
+}
